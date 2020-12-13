@@ -10,10 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_12_081334) do
+ActiveRecord::Schema.define(version: 2020_12_13_111619) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "fav_stocks", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "stock_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "reviews", force: :cascade do |t|
     t.string "comment"
@@ -34,6 +41,9 @@ ActiveRecord::Schema.define(version: 2020_12_12_081334) do
 
   create_table "users", force: :cascade do |t|
     t.string "name"
+    t.string "username"
+    t.string "image"
+    t.string "bio"
     t.string "email"
     t.string "password"
     t.datetime "created_at", precision: 6, null: false
