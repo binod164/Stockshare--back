@@ -11,7 +11,7 @@ Stock.destroy_all
 Review.destroy_all
 
 U1 = User.create(name: "karma", email: "karma@hotmail.com", password: "hello",username: "karma1",image:"https://images-na.ssl-images-amazon.com/images/I/71hLOspSPKL._RI_.jpg", bio: "Stock Guru")
-U2 = User.create(name: "binod", email: "binod@hotmail.com", password: "hello",username: "binod1",image:"https://cdn.hipwallpaper.com/i/2/41/P1ctUY.jpg", bio: "Been there Done that")
+U2 = User.create(name: "binod", email: "binod@hotmail.com", password: "hello",username: "binod1",image:"https://cdn.hipwallpaper.com/i/2/41/P1ctUY.jpg", bio: "New Trader")
 U3 = User.create(name: "dolma", email: "dolma@hotmail.com", password: "hello",username: "dolma1",image:"https://static.wikia.nocookie.net/popeye/images/e/ea/Olive_Oyl_2.png/revision/latest/scale-to-width-down/340?cb=20161028023630", bio: "Stock Trader")
 
 S1 = Stock.create(name: "American Airlines", symbol: "AAL", image:"https://s21.q4cdn.com/616071541/files/multimedia-gallery/assets/Logos/american-airlines/THUMB-aa_aa__vrt_rgb_grd_rev.png")
